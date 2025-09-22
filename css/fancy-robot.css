@@ -1,38 +1,127 @@
 .robot-container {
+	margin: auto;
+	position: relative;
+	height: 600px;
 }
 
 .robot-face-shape {
+	border: 10px solid pink;
+	height: 500px;
+	width: 500px;
+	border-radius: 100px;
+	position: relative;
+	top: 80px;
 }
 
 .robot-eye-left {
+	height: 75px;
+	width: 100px;
+	position: absolute;
+	left: 110px;
+	top: 120px;
+	background: url(https://images.stockcake.com/public/3/8/6/3868cfb0-9541-42e2-8db8-98949454adc4_large/dramatic-cloudy-sky-stockcake.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 20px / 50%;
 }
 
 .robot-eye-right {
+	background: linear-gradient(to right, red, purple);
+	width: 6em;
+	height: 1.5em;
+	position: absolute;
+	top: 170px;
+	left: 290px;
 }
 
 .robot-ear-left {
+	width: 0px;
+	height: 0px;
+	border-right: 60px solid transparent;
+	border-top: 60px solid red;
+	border-left: 60px solid red;
+	border-bottom: 60px solid red;
+	border-top-left-radius: 60px;
+	border-top-right-radius: 60px;
+	border-bottom-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+	position: relative;
+	right: 120px;
+	bottom: 250px;
 }
 
 .robot-ear-right {
+	width: 0px;
+	height: 0px;
+	border-left: 60px solid transparent;
+	border-top: 60px solid yellow;
+	border-right: 60px solid yellow;
+	border-bottom: 60px solid yellow;
+	border-top-right-radius: 60px;
+	border-top-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+	border-bottom-left-radius: 60px;
+	position: relative;
+	right: -495px;
+	bottom: 375px;
 }
 
 .robot-nose {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid rgb(173, 255, 47, 0.5);
+	position: absolute;
+	top: 200px;
+	left: 195px;
 }
 
 .robot-teeth {
+	width: 45%;
+	height: 9%;
+	position: absolute;
+	bottom: 80px;
+	left: 135px;
+	border-radius: 50% / 20px;
+	border: 1px solid transparent;
+	overflow: hidden;
+	text-align: center;
 }
 
 .robot-tooth {
+	display: inline-block;
+	background-color: white;
+	height: 20px;
+	width: 28px;
 }
 
 .robot-hair-style {
+	position: absolute;
+	top: -10px;
+	left: 140px;
+	display: flex;
+	flex-direction: row;
+	column-gap: 20px;
+	align-items: baseline;
 }
 
 .robot-hair-one {
+	background-color: red;
+	width: 30px;
+	height: 15px;
 }
 
 .robot-hair-two {
+	background-color: green;
+	width: 30px;
+	height: 50px;
+	position: relative;
 }
 
 .robot-hair-three {
+	background-color: pink;
+	width: 30px;
+	height: 75px;
 }
