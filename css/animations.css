@@ -1,0 +1,121 @@
+div.robot-eye-left {
+    animation: winky-eye 1s ease-in-out .5s infinite alternate;
+}
+
+@keyframes winky-eye {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.5);
+    }
+}
+
+div.robot-eye-right {
+    animation: moving-eye 6s linear 0s infinite;
+}
+
+@keyframes moving-eye {
+    0% {
+        top: 170px;
+        left: 275px;
+        width: 1.5em;
+    }
+    20% {
+        top: 170px;
+        left: 275px;
+        width: 1.5em;
+    }
+    40% {
+        top: 100px;
+        left: 275px;
+        width: 1.5em;
+    }
+    60% {
+        top: 100px;
+        left: 360px;
+        width: 1.5em;
+    }
+    80% {
+        top: 170px;
+        left: 360px;
+        width: 1.5em;
+    }
+    100% {
+        top: 170px;
+        left: 275px;
+        width: 1.5em;
+        background: linear-gradient(to right, purple, black);
+    }
+}
+
+div.robot-ear-left,
+div.robot-ear-right {
+    animation: spinning-ear 1s ease-in-out 0s infinite;
+}
+
+@keyframes spinning-ear {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.robot-nose {
+    transition: all 2s ease-in-out 0.25s;
+}
+
+.robot-nose:hover {
+    opacity: 0%;
+}
+
+.robot-teeth {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    animation: gnashing-teeth .5s linear 0s infinite alternate;
+}
+
+@keyframes gnashing-teeth {
+    from {
+        row-gap: 5px;
+    }
+    to{
+        row-gap: 15px;
+    }
+}
+
+.robot-hair-one {
+    animation: short-to-long .5s linear 0s infinite alternate;
+}
+
+@keyframes short-to-long {
+    from {
+        height: 15px;
+        background-color: red;
+    }
+    to {
+        height: 75px;
+        background-color: pink;
+    }
+}
+
+.robot-hair-three {
+    animation: long-to-short .5s linear 0s infinite alternate;
+}
+
+@keyframes long-to-short {
+    from {
+        height: 75px;
+        background-color: pink;
+    }
+    to {
+        height: 15px;
+        background-color: red;
+    }
+}
